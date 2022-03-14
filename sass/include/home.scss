@@ -1,0 +1,56 @@
+.banner-text h2{
+    padding-top: 18rem;
+    line-height: 1.45;
+}
+
+.banner-text h3{
+    margin-top: 3rem;
+    line-height: 2.2;
+}
+
+.insta {
+    grid-area: insta;
+    margin-top: 1rem;
+    a {
+        color: black;
+        img {
+            max-height: 50px;
+        }
+    }
+}
+.github {
+    margin-top: 0rem;
+    grid-area: github;
+    a {
+        color: black;
+        img {
+            max-height: 80px;
+        }
+    }
+}
+.email {
+    margin-top: 1rem;
+    grid-area: email;
+    a {
+        color: black;
+        img {
+            max-height: 50px;
+        }
+    }
+}
+.title {
+    grid-area: title;
+    padding-top: 30px;
+}
+
+.links {
+    border-top: 1px solid rgba(gray, 0.3);
+    display: grid;
+    height: 400px;
+    background: white;
+    grid-template-areas:
+    'title title title'
+    'insta github email';
+    grid-gap: 0rem 1rem;
+}
+

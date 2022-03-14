@@ -1,0 +1,29 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+@font-face {
+    font-family: "Atami Display";
+    src:
+        url("fonts/Atami-Display.otf")
+        format('opentype');
+}
+
+@font-face {
+    font-family: "Atami Regular";
+    src:
+        url("fonts/Atami-Regular.otf")
+        format('opentype');
+}
+
+@font-face {
+    font-family: "Atami Stencil";
+    src:
+        url("fonts/Atami-Stencil.otf")
+        format('opentype');
+}

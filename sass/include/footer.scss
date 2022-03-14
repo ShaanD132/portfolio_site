@@ -1,0 +1,17 @@
+/* footer template */
+
+#footer {
+    //font-rale font-size-14 text-white-50 pb-1
+    flex-shrink:0;
+    .special-link, a{
+        font-family: $font-mw;
+        font-size: 14px;
+        color: rgba(white, .5);
+        transition: color 0.5s ease;
+        padding-bottom: 3px;
+    }
+    .special-link:hover, a:hover{
+        color: white;
+    }
+
+}

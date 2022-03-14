@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400&family=Playfair+Display:wght@700&family=Quattrocento+Sans:wght@700&family=Tinos:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+@font-face {
+  font-family: "Atami Display";
+  src: url("fonts/Atami-Display.otf") format("opentype");
+}
+@font-face {
+  font-family: "Atami Regular";
+  src: url("fonts/Atami-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Atami Stencil";
+  src: url("fonts/Atami-Stencil.otf") format("opentype");
+}
+.navbar {
+  min-height: 72px;
+}
+
+#header .menubar ul {
+  margin-right: 20px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#header .menubar ul li {
+  padding: 0px 10px;
+}
+
+#header .menubar a {
+  color: black;
+  font-size: 16px;
+}
+
+#header h1 {
+  color: rgba(0, 0, 0, 0.98);
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 25px;
+}
+
+.banner {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 20, 0.7), rgba(4, 9, 20, 0.7)), url(assets/hackathon_prize.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-gray-bg {
+  background: rgba(128, 128, 128, 0.25);
+}
+
+.font-mw {
+  font-family: "Merriweather", serif;
+}
+
+.font-pd {
+  font-family: "Playfair Display", serif;
+}
+
+.font-qs {
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.font-tinos {
+  font-family: "Tinos", serif;
+}
+
+.font-fredoka {
+  font-family: "Fredoka", sans-serif;
+}
+
+.font-gg {
+  font-family: "Grenze Gotisch", cursive;
+}
+
+.font-atamid {
+  font-family: "Atami Display", sans-serif;
+}
+
+.font-atami {
+  font-family: "Atami Regular", sans-serif;
+}
+
+.font-atamis {
+  font-family: "Atami Stencil", sans-serif;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-40 {
+  font-size: 40px;
+}
+
+.font-size-50 {
+  font-size: 50px;
+}
+
+.font-size-55 {
+  font-size: 55px;
+}
+
+.banner-text h2 {
+  padding-top: 18rem;
+  line-height: 1.45;
+}
+
+.banner-text h3 {
+  margin-top: 3rem;
+  line-height: 2.2;
+}
+
+.insta {
+  grid-area: insta;
+  margin-top: 1rem;
+}
+.insta a {
+  color: black;
+}
+.insta a img {
+  max-height: 50px;
+}
+
+.github {
+  margin-top: 0rem;
+  grid-area: github;
+}
+.github a {
+  color: black;
+}
+.github a img {
+  max-height: 80px;
+}
+
+.email {
+  margin-top: 1rem;
+  grid-area: email;
+}
+.email a {
+  color: black;
+}
+.email a img {
+  max-height: 50px;
+}
+
+.title {
+  grid-area: title;
+  padding-top: 30px;
+}
+
+.links {
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  display: grid;
+  height: 400px;
+  background: white;
+  grid-template-areas: "title title title" "insta github email";
+  grid-gap: 0rem 1rem;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.img1-e {
+  grid-area: img1-e;
+  margin-right: 10px;
+  margin-left: auto;
+}
+.img1-e img {
+  max-width: 240px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img2-e {
+  grid-area: img2-e;
+  margin-right: auto;
+  margin-left: 10px;
+}
+.img2-e img {
+  max-width: 240px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img3-e {
+  grid-area: img3-e;
+}
+.img3-e img {
+  max-width: 500px;
+}
+
+.img2-extra {
+  display: grid;
+  grid-gap: 2rem 0rem;
+  grid-template-areas: "img1-e img2-e" "img3-e img3-e";
+}
+
+/*
+.img5 {
+    grid-area: img6;
+}
+
+.img6 {
+    grid-area: img5;
+} */
+.images .main-img img {
+  max-width: 500px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.images {
+  height: 100%;
+  color: white;
+  margin: 0px auto;
+  padding: 2.5rem 20rem;
+  display: grid;
+  grid-gap: 2.5rem 1rem;
+  grid-template-areas: "img1 img2" "img3 img4";
+}
+
+/* footer template */
+#footer {
+  flex-shrink: 0;
+}
+#footer .special-link, #footer a {
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.5s ease;
+  padding-bottom: 3px;
+}
+#footer .special-link:hover, #footer a:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
