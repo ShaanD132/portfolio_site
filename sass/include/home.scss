@@ -1,67 +1,143 @@
-.banner-text h2{
-    line-height: 1.45;
+#home-banner {
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,20,0.7), rgba(4,9,20,0.7)), url(assets/hackathon_prize.jpeg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .banner-text h2{
+        line-height: 1.45;
+    }
+
+    .banner-text h3{
+        margin-top: 3rem;
+        line-height: 2.2;
+    }
 }
 
-.banner-text h3{
-    margin-top: 3rem;
-    line-height: 2.2;
+#home-links {
+    .insta {
+        grid-area: insta;
+        margin-top: 1rem;
+        a {
+            color: black;
+            img {
+                max-height: 50px;
+            }
+        }
+    }
+    .github {
+        margin-top: 0rem;
+        grid-area: github;
+        a {
+            color: black;
+            img {
+                max-height: 80px;
+            }
+        }
+    }
+    .email {
+        margin-top: 1rem;
+        grid-area: email;
+        a {
+            color: black;
+            img {
+                max-height: 50px;
+            }
+        }
+    }
+    .title {
+        grid-area: title;
+        padding-top: 30px;
+    }
+    
+    .links {
+        border-top: 1px solid rgba(gray, 0.3);
+        display: grid;
+        height: 400px;
+        background: white;
+        grid-template-areas:
+        'title title title'
+        'insta github email';
+        grid-gap: 0rem 1rem;
+    }
 }
 
-.insta {
-    grid-area: insta;
-    margin-top: 1rem;
-    a {
-        color: black;
+#home-images {
+    .img1 {
+        grid-area: img1;
+    }
+    
+    .img2 {
+        grid-area: img2;
+    }
+    
+    .img3 {
+        grid-area: img3;
+    }
+    
+    .img4 {
+        grid-area: img4;
+    }
+    
+    .img1-e {
+        grid-area: img1-e;
+        margin-right: 10px;
+        margin-left: auto;
+        img{
+            max-width: 240px;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+        }
+    }
+    
+    .img2-e {
+        grid-area: img2-e;
+        margin-right: auto;
+        margin-left: 10px;
+        img{
+            max-width: 240px;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+        }
+    }
+    .img3-e {
+        grid-area: img3-e;
         img {
-            max-height: 50px;
+            max-width: 500px;
+        }
+    }
+    
+    .img2-extra{
+        display: grid;
+        grid-gap: 2rem 0rem;
+        grid-template-areas:
+        'img1-e img2-e'
+        'img3-e img3-e';
+    }
+    
+    .images {
+        height: 100%;
+        color: white;
+        padding: 2.5rem;
+        display: grid;
+        justify-content: space-evenly;
+        grid-gap: 2.5rem 1rem;
+        grid-template-areas:
+        'img1 img2'
+        'img3 img4';
+    
+        .main-img {
+            img {
+                max-width: 500px;
+                box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+            }
         }
     }
 }
-.github {
-    margin-top: 0rem;
-    grid-area: github;
-    a {
-        color: black;
-        img {
-            max-height: 80px;
-        }
-    }
-}
-.email {
-    margin-top: 1rem;
-    grid-area: email;
-    a {
-        color: black;
-        img {
-            max-height: 50px;
-        }
-    }
-}
-.title {
-    grid-area: title;
-    padding-top: 30px;
-}
 
-.links {
-    border-top: 1px solid rgba(gray, 0.3);
-    display: grid;
-    height: 400px;
-    background: white;
-    grid-template-areas:
-    'title title title'
-    'insta github email';
-    grid-gap: 0rem 1rem;
-}
-
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,20,0.7), rgba(4,9,20,0.7)), url(assets/hackathon_prize.jpeg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
