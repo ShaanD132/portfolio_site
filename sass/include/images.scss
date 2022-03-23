@@ -67,9 +67,9 @@
 .images {
     height: 100%;
     color: white;
-    margin: 0px auto;
-    padding: 2.5rem 20rem;
+    padding: 2.5rem;
     display: grid;
+    justify-content: space-evenly;
     grid-gap: 2.5rem 1rem;
     grid-template-areas:
     'img1 img2'
